@@ -1,0 +1,9 @@
+.container {
+  @apply grid grid-flow-row gap-y-3 justify-center items-center w-full h-full lg:px-0 mx-auto py-5;
+
+  header {
+    h1 {
+      @apply font-semibold text-2xl;
+    }
+  }
+}

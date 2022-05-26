@@ -1,0 +1,20 @@
+<form class="container" [formGroup]="form" (ngSubmit)="next()">
+  <header>
+    <h1>Select "YES" or "NO"</h1>
+  </header>
+  <main>
+    <h2>Questions:</h2>
+    <div class="grid lg:grid-cols-2 gap-y-5 gap-x-2" *ngIf="quizzes.length">
+      <app-question
+        *ngFor="let quiz of quizzes"
+        [question]="quiz.question"
+        [parent]="form"
+        [name]="quiz.id + ''"
+      ></app-question>
+    </div>
+  </main>
+  <footer class="flex justify-end">
+    <button mat-raised-button color="accent" *ngIf="page < 3">Next</button>
+    <button mat-raised-button color="accent" *ngIf="page === 3">Finish</button>
+  </footer>
+</form>

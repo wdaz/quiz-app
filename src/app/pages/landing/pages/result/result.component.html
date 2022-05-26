@@ -1,0 +1,49 @@
+<div class="flex justify-center items-center h-full">
+  <mat-card class="w-96">
+    <ng-template [ngIf]="result > 0">
+      <mat-card-title>{{ user?.username }} are EXTRAVERT </mat-card-title>
+      <mat-card-content>
+        <mat-list>
+          <mat-list-item> You are energized by other people. </mat-list-item>
+          <mat-list-item> You “shoot from the hip.” </mat-list-item>
+          <mat-list-item> You enjoy social situations. </mat-list-item>
+          <mat-list-item> You like to talk things out. </mat-list-item>
+          <mat-list-item class="font-semibold"
+            >Being an extravert is NOT necessarily the same as being “hyper.”
+          </mat-list-item>
+        </mat-list>
+      </mat-card-content>
+    </ng-template>
+    <ng-template [ngIf]="result < 0">
+      <mat-card-title> You are INTROVERT</mat-card-title>
+      <mat-card-content>
+        <mat-list>
+          <mat-list-item> You are energized by being alone. </mat-list-item>
+          <mat-list-item> You think before you speak. </mat-list-item>
+          <mat-list-item> You put up with social situations. </mat-list-item>
+          <mat-list-item> You like to think things through. </mat-list-item>
+          <mat-list-item class="font-semibold">
+            Being an introvert is NOT necessarily the same as being “shy.
+          </mat-list-item>
+        </mat-list>
+      </mat-card-content>
+    </ng-template>
+
+    <ng-template [ngIf]="result === 0">
+      <mat-card-title> {{ user?.username }} are AMBIVERT </mat-card-title>
+      <mat-card-content>
+        <p class="text-base">
+          <strong>What is an ambivert? </strong>An ambivert is someone who
+          exhibits qualities of both introversion and extroversion, and can flip
+          into either depending on their mood, context, and goals.
+        </p>
+      </mat-card-content>
+    </ng-template>
+
+    <mat-card-actions align="end">
+      <button mat-raised-button color="primary" (click)="startAgain()">
+        START AGAIN
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

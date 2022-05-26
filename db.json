@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "id": "c244324a-bd7c-4231-8ba7-93960aeba34f",
+      "username": "Ruslan"
+    },
+    {
+      "id": "6a3435f9-d064-494e-87cf-9d96f37a070c",
+      "username": "fdfdf"
+    },
+    {
+      "id": "3d352eb9-7da4-4b15-87ed-107d191b8b5e",
+      "username": "fdfdf"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "question": "Some people might say I’m boring."
+    },
+    {
+      "id": 2,
+      "question": "If you have a problem with me, tell me to my face."
+    },
+    {
+      "id": 3,
+      "question": " I work well as part of a team."
+    },
+    {
+      "id": 4,
+      "question": "I speak before I think."
+    },
+    {
+      "id": 5,
+      "question": "People tire me out."
+    },
+    {
+      "id": 6,
+      "question": "I almost never pick up when my cell phone rings."
+    },
+    {
+      "id": 7,
+      "question": "I make people laugh."
+    },
+    {
+      "id": 8,
+      "question": "I can text, play a video game, and help my brother with his homework—at the same time."
+    },
+    {
+      "id": 9,
+      "question": "My dream weekend? Just kicking back, with nothing at all to do."
+    },
+    {
+      "id": 10,
+      "question": "I’d rather hang out with one friend than go to the mall with a group."
+    }
+  ]
+}
